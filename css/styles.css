@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --primary: #ff2e85 !important;
+    --secondary: #ff75af !important;
+    --grey: #e4e3e3 !important;
+    --dark: #343a40 !important;
+    /* font family */
+    --txt:'Quicksand',sans-serif;
+    --logo:'Pacifico',sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    position: relative;
+}
+
+.navbar{
+    box-shadow: 1px 1px 5px var(--grey);
+
+}
+
+.logo, .logo:hover{
+    font-size: 30px !important;
+    font-family: var(--logo);
+    color:var(--primary);
+    
+}
+
+.nav-link{
+    color:var(--dark);
+}
+
+.nav-link:hover{
+    color: var(--secondary);
+}
+
+.navbar-toggler{
+    border: none !important;
+    outline: none !important;
+    font-size: 30px;
+}
+#home{
+    padding-top: 20px !important;
+}
+.social-media li{
+    list-style: none;
+}
+.social-media i{
+    font-size: 36px;
+}
+.bxl-github::after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    transform: translate(-500%,35%);
+
+}
+
+.theme-text{
+    color:var(--primary);
+}
+#person-img{
+    background-image: url(/images/soldaat.jpg);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 408px;
+    background-position-x: 50%;
+}
+
+#person-img::after{
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 90%;
+    background-color: var(--primary);
+    border-radius: 30% 70% 70% 30%/30% 40% 60% 70%;
+    z-index: -1;
+    transform: translateX(17%);
+}
+
+.title{
+    text-align: center;
+}
+.title h1{
+    font-family: var(--logo);
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+
+p {
+    font-size: 20px;
+}
